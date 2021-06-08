@@ -72,7 +72,9 @@ function draw(){
 }
 
 function mouseDragged(){
+    if(bird.body.position.x>=65){
     Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
+    }    
 }
 
 
